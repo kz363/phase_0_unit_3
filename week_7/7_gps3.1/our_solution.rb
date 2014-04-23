@@ -105,3 +105,10 @@ pear = Grocery.new("pear", 4, "Fruits")
 dinner.add_grocery(pear)
 dinner.check_off(pear)
 dinner.view_list
+
+# Reflection
+# I went through this challenge pretty quickly with Ken. Emily decided to give us some more challenging user 
+# stories, which were easy at first, but she played the role of a picky user and made it harder with more 
+# stories. It got to a point where it would've been better to switch from using an array to using a hash, but 
+# we decided to keep sticking with arrays. In the end, I think it would've been a lot simpler to use a hash 
+# so I guess my takeaway is to realize when it's time to stop being stubborn and just rewrite your code.
