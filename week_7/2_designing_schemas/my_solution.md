@@ -22,9 +22,10 @@
 
 ## Release 4: Design your own Schema
 Description of what you're modeling: 
-I modeled what I would imagine a database at a vet's clinic would look like for the one to one. For the many to many schema, I modeled users' ownership of many gaming consoles.
+I modeled what I would imagine a database at a vet's clinic would look like for the one to one schema. For the many to many schema, I modeled users' ownership of many gaming consoles.
 
 ![4](../imgs/my_one_to_one.JPG)
+
 ![5](../imgs/my_many_to_many.JPG)
 
 ## Release 5: Reflection
