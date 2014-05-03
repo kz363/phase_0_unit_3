@@ -48,4 +48,7 @@ Checks the status of your lcoal repository to see what files are in it, what nee
 - Commit locally
 git push
 git fetch
-git commit
+git merge
+
+# Reflection
+I kind of wish we started Phase 0 with using the terminal instead of using the app. I think using the app has made me lazy and more anti-terminal, but I'll start using the terminal to work with repositories from now on. A lot of the git commands up there take so many parameters so I'll have to become more familiar with them as I use them more.
