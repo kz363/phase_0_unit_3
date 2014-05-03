@@ -46,6 +46,7 @@ Checks the status of your lcoal repository to see what files are in it, what nee
 - Push files to a remote repository
 - Fetch changes
 - Commit locally
+
 git push
 git fetch
 git merge
