@@ -7,7 +7,7 @@ variables match (i.e., 'Joseph' is the first element in students; his scores are
 
 Do not alter the students and scores code.
 
-I worked on this challenge [by myself, with:]
+I worked on this challenge by myself.
 
 */
 
@@ -19,21 +19,34 @@ var scores = [ [80, 70, 70, 100],
                [100, 90, 95, 85] ]
 
 
-
-
-
-
 // __________________________________________
 // Write your code below.
 
+var average = function(array) {
+    var sum = 0;
+    for (var i = 0; i < array.length; i++) {
+      sum += array[i];
+    }
+    return sum/array.length
+  };
 
+gradebook = new Object();
 
+for (var i = 0; i < students.length; i++) {
+  gradebook[students[i]] = {testScores: scores[i]};
+}
 
+gradebook.addScore = function(name,score) {
+  gradebook[name].testScores.push(score);
+};
 
+gradebook.getAverage = function(name,score) {
+  return average(gradebook[name].testScores);
+};
 
 // __________________________________________
 // Refactored Solution
-
+// There's not a lot to refactor in this challenge.
 
 
 
@@ -43,12 +56,10 @@ var scores = [ [80, 70, 70, 100],
 
 // __________________________________________
 // Reflect
-
-
-
-
-
-
+// I had trouble interpreting the challenge's directions at first, but I understood it better once I looked
+// at the tests at the bottom. I learned about how JavaScript views objects when I was trying to figure out 
+// how to make a hash. Pretty much ever object is a hash in JavaScript, which makes a lot of sense to me 
+// because you always do "object.property = something". That's pretty much how a hash stores information.
 
 
 
