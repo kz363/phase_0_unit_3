@@ -2,7 +2,10 @@
  
 1) How does this website follow HTML Best Practices? Are there any places where 
 it does not?  Provide examples of the "bad" code.
- 
+It doesn't declare the DocType, which I assume is because the HTML was minified.
+It uses inline styles. For example, <table border=0 cellpadding=0 cellspacing=0 width="85%" bgcolor=#f6f6ef>
+
+
 2) What do you think of the HTML? Did the writers use IDs and Classes properly? 
 
 Did you like the way they used HTML tags?  Please use examples with your arguments.
