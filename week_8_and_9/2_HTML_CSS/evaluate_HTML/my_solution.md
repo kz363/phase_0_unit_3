@@ -20,7 +20,6 @@ Images are missing an Alt attribute.
 Doesn't use a CSS reset.
 
 __2) What do you think of the HTML? Did the writers use IDs and Classes properly? 
-
 Did you like the way they used HTML tags?  Please use examples with your arguments.__
 
 From what I understand, ID's are meant to be used for only one element on one page, and classes are used multiple times. In this page, there are only classes. At the same time, there are classes that are only used once, like the pagetop class.
