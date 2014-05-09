@@ -1,6 +1,6 @@
 // U3.W8-9: Gradebook from Names and Scores
 
-// I worked on this challenge [by myself, with:]
+// I worked on this challenge by myself.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -64,20 +64,46 @@ var officers = {
 }
 
 // Pseudocode
+// Create a for loop that iterates through each student in votes, and then a nested loop that
+// iterates through the candidates each student voted for. If the candidate exists in voteCount
+// already, add 1 to the tally. Otherwise, set tally to 1.
 
+// Create a for loop that iterates through each office in voteCount. Set a variable highest_tally
+// to 0 and then nest a loop that iterates through the tallies for each candidate. If the candidate's
+// votes are higher than the tally, then set the highest_tally to the vote amount and set the office in
+// officers to the name of the candidate.
 
 // __________________________________________
 // Initial Solution
 
+for (var student in votes) {
+  var ballot = votes[student];
+  for (var office in ballot) {
+    var candidate = ballot[office];
+    if (voteCount[office].hasOwnProperty(candidate)) {
+      voteCount[office][candidate] += 1;
+    }
+    else {
+      voteCount[office][candidate] = 1;
+    }
+  }
+}
 
-
-
-
-
+for (var office in voteCount) {
+  var highest_tally = 0;
+  var candidates = voteCount[office];
+  for (var candidate in candidates){
+    var tally = candidates[candidate];
+    if (tally > highest_tally) {
+      highest_tally = tally;
+      officers[office] = candidate;
+    }
+  }
+}
 
 // __________________________________________
 // Refactored Solution
-
+// I'm not good at refactoring Javascript logic/syntax yet but I think the variable names are fine.
 
 
 
@@ -85,7 +111,12 @@ var officers = {
 
 // __________________________________________
 // Reflection
-
+// I'm glad I did this challenge because I had no idea how to iterate through nested object properties, so 
+// this whole thing was a learning experience. On line 83, I tried doing voteCount[office] == null but it 
+// didn't work as I thought it would, so I found hasOwnProperty. During the whole challenge, I kept thinking
+// "oh this would be so much easier if I did this in Ruby", and that reminds me of people saying that Ruby
+// is an easy language to pick up. I'm beginning to realize this from my experiences with other languages
+// as well.
 
 
 
